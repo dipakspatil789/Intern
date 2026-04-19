@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+}
+
+.header {
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    color: white;
+    height: 100vh;
+    text-align: center;
+    padding: 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+#menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: white;
+}
+
+.hero {
+    margin-top: 100px;
+}
+
+.hero h2 {
+    font-size: 48px;
+}
+
+.hero p {
+    margin: 20px 0;
+}
+
+.btn {
+    padding: 12px 25px;
+    background: #ff4b2b;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.features, .about, .contact {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.feature-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.card {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 250px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+    margin: auto;
+}
+
+.contact input, .contact textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.footer {
+    background: #111;
+    color: white;
+    padding: 15px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .feature-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background: #203a43;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        padding: 10px;
+    }
+
+    #menu-btn {
+        display: block;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+}
